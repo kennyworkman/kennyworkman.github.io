@@ -43,6 +43,10 @@
   </url>
   
   <url>
+    <loc>https:kennethworkman.com/thoughts/on_writing/</loc>
+  </url>
+  
+  <url>
     <loc>https:kennethworkman.com/projects/</loc>
   </url>
   
@@ -56,6 +60,10 @@
   
   <url>
     <loc>https:kennethworkman.com/tags/</loc>
+  </url>
+  
+  <url>
+    <loc>https:kennethworkman.com/thoughts/</loc>
   </url>
   
 </urlset>
