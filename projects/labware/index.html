@@ -35,13 +35,14 @@
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Bioware index"/>
-<meta name="twitter:description" content="A simple tool to catalog biological labware."/>
+<meta name="twitter:description" content="Reimplementing git internals to persist bioware."/>
 
 <meta property="og:title" content="Bioware index" />
-<meta property="og:description" content="A simple tool to catalog biological labware." />
+<meta property="og:description" content="Reimplementing git internals to persist bioware." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https:kennethworkman.com/projects/labware/" />
-<meta property="og:site_name" content="Kenny Workman" />
+<meta property="og:url" content="https://kennethworkman.com/projects/labware/" />
+<meta property="article:published_time" content="2019-10-01T00:00:00+00:00" />
+<meta property="article:modified_time" content="2019-10-01T00:00:00+00:00" /><meta property="og:site_name" content="Kenny Workman" />
 
 
     
@@ -67,7 +68,9 @@
         
 <div class="flex-container">
     <aside role="complementary">
-        A simple tool to catalog biological labware.
+        October 1, 2019
+        <br>
+        Reimplementing git internals to persist bioware.
         <div class="tag-container">
             
             
@@ -95,13 +98,17 @@
 
 <a href="/projects/static/labware_index.pdf">Docs.</a>
 </p>
-<p>An exercise in designing persistent and intuitive software.</p>
 <p>I used a data structure architecture largely <a href="https://blog.jayway.com/2013/03/03/git-is-a-purely-functional-data-structure/" target="_blank">inspired by
 git</a>
 .</p>
 <p>A detailed breakdown of implementation, design choices, and an API specification
 can be found in the linked documentation.</p>
-<p>Here is a quick use case with the exposed API:</p>
+<p>The
+heavy lifting here was getting this state to persist when the runtime memory was
+wiped, such that data can be retrieved with linear complexity. What we end up
+with is, in effect, a hash map implemented directly onto the nix-flavor filesystem with
+keys derived from compressed object binaries.</p>
+<p>Here is a quick use case with the exposed API via the python interpretor.</p>
 <pre><code>&gt;&gt;&gt; rad = registry.get(&quot;Rad&quot;)
 &gt;&gt;&gt; rad
 Bio-Rad-HSP9601B with length 127.76 mm, width 85.48 mm, height 16.06 mm, and 96 wells. &gt;&gt;&gt; rad.plate
