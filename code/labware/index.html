@@ -11,7 +11,7 @@
 <meta name="referrer" content="no-referrer">
 
 <title>
-    Novel strain of E. coli - Kenny Workman
+    Bioware index - Kenny Workman
 </title>
 
 
@@ -66,19 +66,16 @@
 
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Didact+Gothic">
 
-<meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:image" content="https://kennethworkman.com/projects/static/xray.png"/>
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Bioware index"/>
+<meta name="twitter:description" content="Reimplementing git internals to persist bioware."/>
 
-<meta name="twitter:title" content="Novel strain of E. coli"/>
-<meta name="twitter:description" content="Used canonical synthetic biology techniques to engineer a small library of bacterial strains."/>
-
-<meta property="og:title" content="Novel strain of E. coli" />
-<meta property="og:description" content="Used canonical synthetic biology techniques to engineer a small library of bacterial strains." />
+<meta property="og:title" content="Bioware index" />
+<meta property="og:description" content="Reimplementing git internals to persist bioware." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://kennethworkman.com/projects/strain/" />
-<meta property="og:image" content="https://kennethworkman.com/projects/static/xray.png" />
-<meta property="article:published_time" content="2019-04-01T00:00:00+00:00" />
-<meta property="article:modified_time" content="2019-04-01T00:00:00+00:00" /><meta property="og:site_name" content="Kenny Workman" />
+<meta property="og:url" content="https://kennethworkman.com/code/labware/" />
+<meta property="article:published_time" content="2019-10-01T00:00:00+00:00" />
+<meta property="article:modified_time" content="2019-10-01T00:00:00+00:00" /><meta property="og:site_name" content="Kenny Workman" />
 
 
 
@@ -89,7 +86,7 @@
     
     <title>
         
-        Novel strain of E. coli
+        Bioware index
         
     </title>
 </head>
@@ -98,17 +95,25 @@
     
     
     <header class="wrap flex-container">
-        <h1>Novel strain of E. coli</h1>
+        <h1>Bioware index</h1>
     </header>
     
     <main class="wrap">
         
 <div class="flex-container">
     <aside role="complementary">
-        April 1, 2019
+        October 1, 2019
         <br>
-        Used canonical synthetic biology techniques to engineer a small library of bacterial strains.
+        Reimplementing git internals to persist bioware.
         <div class="tag-container">
+            
+            
+            <span class="tag">
+                <a href="/tags/software/">
+                    software
+                </a>
+            </span>
+            
             
             
             <span class="tag">
@@ -123,27 +128,30 @@
     <hr />
     </br>
     <article role="article">
-        <p><a href="/research/static/top_10cc.pdf">Presentation.</a>
+        <p><a href="https://github.com/kennyworkman/labware-index" target="_blank">Source code.</a>
 
-<a href="/research/static/advancing_wet_and_dry_lab_tools.pdf">Abstract.</a>
+<a href="/projects/static/labware_index.pdf">Docs.</a>
 </p>
-<p>Under the mentorship of <a href="https://www.linkedin.com/in/henrique-c-de-paoli-9a188111/" target="_blank">Henrique De
-Paoli</a>
-, I engineered a
-strain of <em>E. coli</em> with &ldquo;switch-like&rdquo; control over its endogenous expression of
-vectors.</p>
-<p>A construct was assembled to integrate this behavior into the bacterial
-chromosome through a
-<a href="https://en.wikipedia.org/wiki/Transposable_element" target="_blank">transposon</a>
-.  Using
-standard molecular biology benchwork - Assembly PCR, gel electrophoresis, and
-Gibson assembly - library of novel strains was gathered.</p>
-<p><img src="/projects/static/diva.png" alt="Construct design"></p>
-<p>Though the work is ongoing under the Synthetic Biology Informatics group at
-<a href="https://www.jbei.org/" target="_blank">JBEI</a>
-, initial results were promising, showing marked increase in host vector
-production when induced.</p>
-
+<p>I used a data structure architecture largely <a href="https://blog.jayway.com/2013/03/03/git-is-a-purely-functional-data-structure/" target="_blank">inspired by
+git</a>
+.</p>
+<p>A detailed breakdown of implementation, design choices, and an API specification
+can be found in the linked documentation.</p>
+<p>The
+heavy lifting here was getting this state to persist when the runtime memory was
+wiped, such that data can be retrieved with linear complexity. What we end up
+with is, in effect, a hash map implemented directly onto the nix-flavor filesystem with
+keys derived from compressed object binaries.</p>
+<p>Here is a quick use case with the exposed API via the python interpretor.</p>
+<pre><code>&gt;&gt;&gt; rad = registry.get(&quot;Rad&quot;)
+&gt;&gt;&gt; rad
+Bio-Rad-HSP9601B with length 127.76 mm, width 85.48 mm, height 16.06 mm, and 96 wells. &gt;&gt;&gt; rad.plate
+Plate with length 127.76 mm, width 85.48 mm, height 16.06 mm, and 96 wells.
+&gt;&gt;&gt; rad.well
+Well with volume 200 uL, depth 14.81 mm, top diameter 5.46 mm, and bottom diameter 2.
+˓→64 mm.
+&gt;&gt;&gt; rad.plate.well_num 96
+</code></pre>
     </article>
 </div>
 
@@ -156,7 +164,7 @@ production when induced.</p>
 
 
     
-        <a href="/projects">back</a>
+        <a href="/code">back</a>
         
             &#183;
         

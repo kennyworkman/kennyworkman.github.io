@@ -30,6 +30,39 @@
 
 
 
+<script>
+  MathJax = {
+    tex: {
+      inlineMath: [
+        ["$", "$"],
+        ["\\(", "\\)"]
+      ],
+      displayMath: [
+        ["$$", "$$"],
+        ["\\[", "\\]"]
+      ],
+      processEscapes: true,
+      processEnvironments: true
+    },
+    options: {
+      skipHtmlTags: ["script", "noscript", "style", "textarea", "pre"]
+    }
+  };
+
+  window.addEventListener("load", event => {
+    document.querySelectorAll("mjx-container").forEach(function(x) {
+      x.parentElement.classList += "has-jax";
+    });
+  });
+</script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script
+  type="text/javascript"
+  id="MathJax-script"
+  async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
+></script>
+
 
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Didact+Gothic">
 
@@ -46,6 +79,7 @@ My interests vary, but I&rsquo;m currently reading generally about or working on
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://kennethworkman.com/about/" />
 <meta property="og:site_name" content="Kenny Workman" />
+
 
 
     
@@ -97,8 +131,6 @@ phenotypes at <a href="https://serotiny.bio/" target="_blank">Serotiny</a>
 </li>
 <li><a href="https://en.wikipedia.org/wiki/Necessary_Illusions" target="_blank">Necessary Illusions</a>
 </li>
-<li><a href="https://en.wikipedia.org/wiki/G%C3%B6del,_Escher,_Bach" target="_blank">Godel, Escher, Bach: an Eternal Golden Braid</a>
-</li>
 <li><a href="https://www.goodreads.com/book/show/179133.Domain_Driven_Design" target="_blank">Domain-Driven Design</a>
 </li>
 <li><a href="https://www.goodreads.com/book/show/42403122-the-code" target="_blank">The Code: Silicon Valley and the Remaking of America</a>
@@ -146,7 +178,7 @@ Modern</a>
             <a href="/research">research</a>
         
             &#183; 
-            <a href="/projects">projects</a>
+            <a href="/code">code</a>
         
             &#183; 
             <a href="/about">about</a>
@@ -164,7 +196,15 @@ Modern</a>
         
     </main>
     
-    <footer class="flex-container footer">copyright sucks</footer>
+    <footer class="flex-container footer"><footer class="footer">
+  
+</footer>
+</div>
+
+</body>
+
+</html>
+</footer>
     
     
 </body>

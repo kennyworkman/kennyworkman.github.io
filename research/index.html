@@ -30,6 +30,39 @@
 
 
 
+<script>
+  MathJax = {
+    tex: {
+      inlineMath: [
+        ["$", "$"],
+        ["\\(", "\\)"]
+      ],
+      displayMath: [
+        ["$$", "$$"],
+        ["\\[", "\\]"]
+      ],
+      processEscapes: true,
+      processEnvironments: true
+    },
+    options: {
+      skipHtmlTags: ["script", "noscript", "style", "textarea", "pre"]
+    }
+  };
+
+  window.addEventListener("load", event => {
+    document.querySelectorAll("mjx-container").forEach(function(x) {
+      x.parentElement.classList += "has-jax";
+    });
+  });
+</script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script
+  type="text/javascript"
+  id="MathJax-script"
+  async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
+></script>
+
 
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Didact+Gothic">
 
@@ -42,6 +75,7 @@
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://kennethworkman.com/research/" />
 <meta property="og:site_name" content="Kenny Workman" />
+
 
 
     
@@ -106,7 +140,7 @@ Fibroblasts&rdquo;</li>
             <a href="/research">research</a>
         
             &#183; 
-            <a href="/projects">projects</a>
+            <a href="/code">code</a>
         
             &#183; 
             <a href="/about">about</a>
@@ -124,7 +158,15 @@ Fibroblasts&rdquo;</li>
         
     </main>
     
-    <footer class="flex-container footer">copyright sucks</footer>
+    <footer class="flex-container footer"><footer class="footer">
+  
+</footer>
+</div>
+
+</body>
+
+</html>
+</footer>
     
     
 </body>

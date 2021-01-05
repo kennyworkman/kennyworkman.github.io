@@ -13,6 +13,15 @@
     
     <item>
       <title>Capsule</title>
+      <link>https://kennethworkman.com/code/capsule/</link>
+      <pubDate>Tue, 08 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://kennethworkman.com/code/capsule/</guid>
+      <description>Using Monte Carlo simulation to improve likelihood evaluation.</description>
+    </item>
+    
+    <item>
+      <title>Capsule</title>
       <link>https://kennethworkman.com/projects/capsule/</link>
       <pubDate>Tue, 08 Dec 2020 00:00:00 +0000</pubDate>
       
@@ -22,11 +31,29 @@
     
     <item>
       <title>Autodag</title>
+      <link>https://kennethworkman.com/code/autodag/</link>
+      <pubDate>Sat, 15 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://kennethworkman.com/code/autodag/</guid>
+      <description>CLI visualization of Automatic Differentiation</description>
+    </item>
+    
+    <item>
+      <title>Autodag</title>
       <link>https://kennethworkman.com/projects/autodag/</link>
       <pubDate>Sat, 15 Aug 2020 00:00:00 +0000</pubDate>
       
       <guid>https://kennethworkman.com/projects/autodag/</guid>
       <description>CLI visualization of Automatic Differentiation</description>
+    </item>
+    
+    <item>
+      <title>Enzyme classification using CNNs</title>
+      <link>https://kennethworkman.com/code/enzyme/</link>
+      <pubDate>Mon, 01 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://kennethworkman.com/code/enzyme/</guid>
+      <description>Classifying enzyme catalytic activity with neural networks.</description>
     </item>
     
     <item>
