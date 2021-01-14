@@ -134,11 +134,15 @@ primitives in this new distributed medium. My principles were:</p>
 <li>speed</li>
 <li>terminal-based workflow that hooks into future personal tools</li>
 </ul>
-<p><code>seneca &lt;url&gt;</code> will add any paper to the system by a paywalled or unpaywalled
-url.</p>
-<p><code>seneca letters</code> will spawn an interactive <code>grep</code> process over all papers within
-the system. Selecting any paper will open a dedicated note buffer, appending
-time stamped boilerplate for current thoughts, alongside the paper itself.</p>
+<p>To add a paper:</p>
+<pre><code>seneca https://www.nature.com/articles/s41467-020-18008-4
+</code></pre><p>To search across indexed papers and retrieve note buffer:</p>
+<pre><code>seneca l 
+# or
+seneca letters
+</code></pre><p>I think you will find this is all that you need. There is no delete. If you
+spent enough time indexing a reference, I&rsquo;m of the opinion you should hang on to
+it (just in case).</p>
 <p>Notes persist across time. Opening a long forgotten paper weeks later will
 recover time stamped notes from my last interaction with it.</p>
 
