@@ -3,12 +3,32 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://kennethworkman.com/code/</loc>
-    <lastmod>2021-01-05T00:00:00+00:00</lastmod>
+    <loc>https://kennethworkman.com/</loc>
+    <lastmod>2021-01-18T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://kennethworkman.com/</loc>
+    <loc>https://kennethworkman.com/reading/</loc>
+    <lastmod>2021-01-18T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://kennethworkman.com/reading/vanderbilt/</loc>
+    <lastmod>2021-01-18T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://kennethworkman.com/reading/moonwalking/</loc>
+    <lastmod>2021-01-14T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://kennethworkman.com/reading/hailsham/</loc>
+    <lastmod>2021-01-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://kennethworkman.com/code/</loc>
     <lastmod>2021-01-05T00:00:00+00:00</lastmod>
   </url>
   
