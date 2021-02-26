@@ -6,10 +6,40 @@
     <description>Recent content on Kenny Workman</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 01 Feb 2021 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 26 Feb 2021 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://kennethworkman.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>bad philosophy</title>
+      <link>https://kennethworkman.com/writing/bad_philosophy/</link>
+      <pubDate>Fri, 26 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://kennethworkman.com/writing/bad_philosophy/</guid>
+      <description>Some ideas are worse than others</description>
+    </item>
+    
+    <item>
+      <title>The Beginning of Infinity</title>
+      <link>https://kennethworkman.com/reading/infinity/</link>
+      <pubDate>Fri, 26 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://kennethworkman.com/reading/infinity/</guid>
+      <description>2/26 - 496 pages https://en.wikipedia.org/wiki/The_Beginning_of_Infinity
+Deutsch is so fucking smart. Lots of thinking about thinking - why a tradition of criticism is crucial to knowledge creation and why such a process is unbounded.
+An intuitive, non-mathematical explanation for the multiverse and quantum mechanics. A rich but fabricated dialogue between Socrates (assuming that Deutsch got a bit carried away with the personification) and Hermes. An inspirational call to dredge deep space for raw mass to build space stations.</description>
+    </item>
+    
+    <item>
+      <title>Zero to One</title>
+      <link>https://kennethworkman.com/reading/021/</link>
+      <pubDate>Wed, 24 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://kennethworkman.com/reading/021/</guid>
+      <description>2/24 - 224 pages https://en.wikipedia.org/wiki/Zero_to_One
+Very clear writing. Easy to digest the ideas too quickly without really thinking or appreciating significance. Monopolies being mutually exclusive from capitalism is one kicker. The actual importance of distribution/sales in an engineering-heavy context is another.</description>
+    </item>
     
     <item>
       <title>Genentech: The Beginnings of Biotech</title>
@@ -86,21 +116,12 @@
     </item>
     
     <item>
-      <title>Electrical Wizards</title>
-      <link>https://kennethworkman.com/thoughts/electric_wizards/</link>
+      <title>electrical wizards</title>
+      <link>https://kennethworkman.com/writing/electric_wizards/</link>
       <pubDate>Fri, 23 Oct 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://kennethworkman.com/thoughts/electric_wizards/</guid>
+      <guid>https://kennethworkman.com/writing/electric_wizards/</guid>
       <description>People used to be more hungry</description>
-    </item>
-    
-    <item>
-      <title>Academia probably won&#39;t cure cancer</title>
-      <link>https://kennethworkman.com/thoughts/academia_cure_cancer/</link>
-      <pubDate>Sun, 23 Aug 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://kennethworkman.com/thoughts/academia_cure_cancer/</guid>
-      <description>Notes for now</description>
     </item>
     
     <item>
@@ -122,11 +143,11 @@
     </item>
     
     <item>
-      <title>On writing</title>
-      <link>https://kennethworkman.com/thoughts/on_writing/</link>
+      <title>on writing</title>
+      <link>https://kennethworkman.com/writing/on_writing/</link>
       <pubDate>Mon, 20 Jul 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://kennethworkman.com/thoughts/on_writing/</guid>
+      <guid>https://kennethworkman.com/writing/on_writing/</guid>
       <description>How shitty is this essay?</description>
     </item>
     
@@ -227,8 +248,7 @@
       
       <guid>https://kennethworkman.com/about/</guid>
       <description>I&amp;rsquo;m a software engineer and synthetic biologist with a firm belief in building from first principles . I&amp;rsquo;m trying to develop systems and tools to engineer living systems from scratch.
-I studied Electrical Engineering, Computer Science, and Bioengineering at Berkeley. Now I&amp;rsquo;m working on a stealth startup with support from Emergent Ventures . I also do some contract machine learning work on synthetic proteins at Serotiny .
-I&amp;rsquo;m currently reading generally about or working on projects relating to:</description>
+I studied Electrical Engineering, Computer Science, and Bioengineering at Berkeley. I dropped out of school to work on a stealth startup with pre-seed investment from Lucy Guo , the House , and Tyler Cowen . I also do contract machine learning work on synthetic proteins at Serotiny .</description>
     </item>
     
     <item>
